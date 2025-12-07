@@ -9,3 +9,12 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 elements.forEach(el => observer.observe(el));
+
+window.addEventListener("scroll", () => {
+    const btn = document.querySelector(".whatsapp-float");
+    if (window.scrollY > 100) {
+      btn.style.opacity = "1";
+    } else {
+      btn.style.opacity = "0.7";
+    }
+  });
