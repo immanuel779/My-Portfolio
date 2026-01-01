@@ -69,6 +69,14 @@ border-radius: 12px;
   font-size: 14px;
 }
 
+.container .progress-bar.bg-info:hover {
+  transform: scaleY(1.2); /* make it pop */
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -93,6 +101,7 @@ border-radius: 12px;
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
+
 }
 
 .whatsapp-float {
